@@ -1,0 +1,126 @@
+:root{
+    --theme-white:#fff;
+    --theme-orange:#f35525;
+    --theme-text:#7a7a7a;
+    --theme-bgc-grey: #cdcdcd;
+
+    --theme-light:#eee;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  max-width: 1320px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: inherit;
+}
+
+ul li{
+    list-style: none;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.justify-content-between{
+    justify-content: space-between;
+}
+.align-items-center{
+    align-items: center;
+}
+.w-100{
+    width: 100%;
+}
+/* top-navbar section start */
+.top-navbar{
+    background-color: var(--theme-white);
+    padding: 10px 0;
+    border-bottom: 1px solid var(--theme-light);
+}
+.top-navbar .info li:first-child{
+    font-size: 14px;
+    color: var(--theme-text);
+    border-right: 1px solid var(--theme-light);
+    padding-right: 25px;
+    margin-right: 25px;
+}
+.top-navbar .info li:last-child{
+    font-size: 14px;
+    color: var(--theme-text);
+}
+.top-navbar .info li i{
+    color: var(--theme-orange);
+}
+.top-navbar .media li a {
+    font-size: 14px;
+    padding: 8px;
+    margin-right: 1rem;
+    background-color: var(--theme-bgc-grey);
+    color: var(--theme-white);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+.top-navbar .media li a:hover{
+    background-color: var(--theme-orange);
+}
+/* top-navbar section end */
+
+/* header section start */
+header{
+    background-color: var(--theme-white);
+    padding: 30px;
+}
+header .logo{
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+header nav ul li{
+    padding: 0 20px;
+    margin: 0 5px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+header nav ul li .active{
+    color: var(--theme-orange);
+}
+header nav ul li:hover{
+    color: var(--theme-orange);
+}
+header nav ul li:last-child a{
+    background-color: #000;
+    color: var(--theme-white);
+    padding-right: 20px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+header nav ul li:last-child a i{
+    background-color: var(--theme-orange);
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+header nav ul li:last-child a:hover{
+    color: var(--theme-orange);
+}
+header nav ul li:last-child a:hover i{
+    color: var(--theme-white);
+}
+/* header section end */
