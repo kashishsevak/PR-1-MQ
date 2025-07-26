@@ -1,71 +1,96 @@
-:root{
-    --theme-white:#fff;
-    --theme-orange:#f35525;
-    --theme-text:#7a7a7a;
+:root {
+    --theme-white: #fff;
+    --theme-orange: #f35525;
+    --theme-text: #7a7a7a;
     --theme-bgc-grey: #cdcdcd;
 
-    --theme-light:#eee;
+    --theme-light: #eee;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     font-family: 'Poppins', sans-serif;
 }
 
 .container {
-  max-width: 1320px;
-  padding: 0 15px;
-  margin: 0 auto;
+    max-width: 1320px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
-a{
+a {
     text-decoration: none;
     display: inline-block;
     color: inherit;
 }
 
-ul li{
+ul li {
     list-style: none;
 }
 
-.d-flex{
-    display: flex;
+img{
+    display: block;
 }
 
-.justify-content-between{
+.d-flex {
+    display: flex;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-4{
+    width: 33.33%;
+}
+
+.justify-content-between {
     justify-content: space-between;
 }
-.align-items-center{
+
+.align-items-center {
     align-items: center;
 }
-.w-100{
+
+.flex-column{
+    flex-direction: column;
+}
+
+.w-100 {
     width: 100%;
 }
+
+
 /* top-navbar section start */
-.top-navbar{
+.top-navbar {
     background-color: var(--theme-white);
     padding: 10px 0;
     border-bottom: 1px solid var(--theme-light);
 }
-.top-navbar .info li:first-child{
+
+.top-navbar .info li:first-child {
     font-size: 14px;
     color: var(--theme-text);
     border-right: 1px solid var(--theme-light);
     padding-right: 25px;
     margin-right: 25px;
 }
-.top-navbar .info li:last-child{
+
+.top-navbar .info li:last-child {
     font-size: 14px;
     color: var(--theme-text);
 }
-.top-navbar .info li i{
+
+.top-navbar .info li i {
     color: var(--theme-orange);
 }
+
 .top-navbar .media li a {
     font-size: 14px;
     padding: 8px;
@@ -75,41 +100,53 @@ ul li{
     border-radius: 50%;
     transition: all 0.3s ease;
 }
-.top-navbar .media li a:hover{
+
+.top-navbar .media li a:hover {
     background-color: var(--theme-orange);
 }
+
 /* top-navbar section end */
 
+
+
 /* header section start */
-header{
+header {
     background-color: var(--theme-white);
     padding: 30px;
+    position: sticky;
+    top: 0;
 }
-header .logo{
+
+header .logo {
     font-size: 28px;
     font-weight: 700;
     letter-spacing: 2px;
 }
-header nav ul li{
+
+header nav ul li {
     padding: 0 20px;
     margin: 0 5px;
     font-weight: 600;
     transition: all 0.3s ease;
 }
-header nav ul li .active{
+
+header nav ul li .active {
     color: var(--theme-orange);
 }
-header nav ul li:hover{
+
+header nav ul li:hover {
     color: var(--theme-orange);
 }
-header nav ul li:last-child a{
+
+header nav ul li:last-child a {
     background-color: #000;
     color: var(--theme-white);
     padding-right: 20px;
     border-radius: 20px;
     transition: all 0.3s ease;
 }
-header nav ul li:last-child a i{
+
+header nav ul li:last-child a i {
     background-color: var(--theme-orange);
     width: 40px;
     height: 40px;
@@ -117,10 +154,79 @@ header nav ul li:last-child a i{
     margin-right: 5px;
     border-radius: 50%;
 }
-header nav ul li:last-child a:hover{
+
+header nav ul li:last-child a:hover {
     color: var(--theme-orange);
 }
-header nav ul li:last-child a:hover i{
+
+header nav ul li:last-child a:hover i {
     color: var(--theme-white);
 }
+
 /* header section end */
+
+
+
+/* hero section start  */
+.hero {
+    /* height: 900px;  */
+    background-image: url(../images/hero-bg-image);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 220px 20% 320px 20%;
+}
+
+.hero .hero-content {
+    color: var(--theme-white);
+}
+
+.hero .hero-content p {
+    background-color: var(--theme-white);
+    color: #000;
+    font-weight: 600;
+    display: inline-block;
+    padding: 7px 20px;
+    margin-bottom: 1.5rem;
+}
+
+.hero .hero-content p span {
+    color: var(--theme-orange);
+}
+
+.hero .hero-content h1 {
+    font-size: 62px;
+    text-transform: uppercase;
+    line-height: 72px;
+}
+
+.hero .btn a:first-child {
+    background-color: #ffffff33;
+    color: var(--theme-white);
+    font-size: 24px;
+    padding: 10px 13px;
+    margin: 0 3rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 55%;
+    right: 0;
+
+}
+
+.hero .btn a:last-child {
+    background-color: #ffffff33;
+    color: var(--theme-white);
+    font-size: 24px;
+    padding: 10px 13px;
+    margin: 0 3rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 55%;
+    left: 0;
+}
+
+.featured{
+    background-color: var(--theme-white);
+    margin-top: 120px;
+}
+/* hero section end  */
